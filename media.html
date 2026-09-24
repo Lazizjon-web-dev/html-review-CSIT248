@@ -1,0 +1,325 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Review - Multimedia&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;HTML Review Website&lt;/h1&gt;
+        &lt;p&gt;A comprehensive guide to HTML tags, their attributes, and usage examples&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="text.html"&gt;Text Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="links.html"&gt;Links & Media&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="lists.html"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="forms.html"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="media.html" class="active"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="semantic.html"&gt;Semantic Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="metadata.html"&gt;Metadata&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;div class="tag-section"&gt;
+            &lt;h2&gt;Multimedia Tags&lt;/h2&gt;
+
+            &lt;!-- Embed Tag --&gt;
+            &lt;h3&gt;&amp;lt;embed&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;embed&amp;gt;&lt;/code&gt; tag embeds external content such as plugins, Flash files, or other multimedia 
+                resources directly into the web page. It is a self-closing tag.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;src&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of the external content&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the MIME type of the embedded content&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;width&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the width of the embed in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;height&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the height of the embed in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;embed src="document.pdf" type="application/pdf" width="500" height="400"&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;(Embedded content would appear here if the file existed)&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Object Tag --&gt;
+            &lt;h3&gt;&amp;lt;object&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt; tag embeds external resources such as images, audio, video, or other 
+                multimedia content. It provides more control and flexibility than the &lt;code&gt;&amp;lt;embed&amp;gt;&lt;/code&gt; tag.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;data&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of the external resource&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the MIME type of the object&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;width&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the width in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;height&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the height in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;object data="image.jpg" type="image/jpeg" width="300" height="200"&gt;
+  Image not supported
+&amp;lt;/object&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;(Object would appear here if the file existed)&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- iframe Tag --&gt;
+            &lt;h3&gt;&amp;lt;iframe&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; tag creates an inline frame that embeds another HTML document within the current page. 
+                It is commonly used to embed maps, videos from YouTube, or external content.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;src&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of the page to embed&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;width&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the width of the iframe in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;height&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the height of the iframe in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Provides a title for the iframe (accessibility)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;iframe src="https://example.com" width="600" height="400" title="Example Website"&gt;&amp;lt;/iframe&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;(Iframe with external content would appear here)&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Figure Tag --&gt;
+            &lt;h3&gt;&amp;lt;figure&amp;gt; and &amp;lt;figcaption&amp;gt; Tags&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; tag semantically groups images, diagrams, or other illustrations with optional captions. 
+                The &lt;code&gt;&amp;lt;figcaption&amp;gt;&lt;/code&gt; tag provides a caption or description for the content.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;These tags have no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;figure&gt;
+  &amp;lt;img src="image.jpg" alt="A sample image"&gt;
+  &amp;lt;figcaption&gt;This is a sample image with a caption&amp;lt;/figcaption&gt;
+&amp;lt;/figure&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;figure style="border: 1px solid #ddd; padding: 1rem; text-align: center; display: inline-block;"&gt;
+                        &lt;p style="color: #999; font-size: 0.9rem;"&gt;[Image would appear here]&lt;/p&gt;
+                        &lt;figcaption&gt;This is a sample image with a caption&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Canvas Tag --&gt;
+            &lt;h3&gt;&amp;lt;canvas&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; tag provides a drawable area that can be used to create graphics and animations 
+                using JavaScript. It is useful for games, charts, and interactive visualizations.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;width&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the width of the canvas in pixels (default 300)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;height&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the height of the canvas in pixels (default 150)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;canvas id="myCanvas" width="400" height="300"&gt;
+  Your browser does not support canvas.
+&amp;lt;/canvas&gt;
+
+&amp;lt;script&gt;
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = 'blue';
+  ctx.fillRect(50, 50, 100, 100);
+&amp;lt;/script&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;canvas id="myCanvas" width="400" height="300" style="border: 1px solid #ddd; background-color: #f9f9f9;"&gt;Your browser does not support canvas.&lt;/canvas&gt;
+                    &lt;script&gt;
+                        const canvas = document.getElementById('myCanvas');
+                        const ctx = canvas.getContext('2d');
+                        ctx.fillStyle = '#667eea';
+                        ctx.fillRect(50, 50, 100, 100);
+                        ctx.strokeStyle = '#764ba2';
+                        ctx.lineWidth = 3;
+                        ctx.strokeRect(150, 50, 100, 100);
+                    &lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- SVG Tag --&gt;
+            &lt;h3&gt;&amp;lt;svg&amp;gt; Tag (Scalable Vector Graphics)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt; tag defines a container for SVG (Scalable Vector Graphics). 
+                SVG allows you to create vector graphics using XML syntax that scales without losing quality.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;width&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the width of the SVG&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;height&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the height of the SVG&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;viewBox&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the coordinate system for the SVG&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;svg width="200" height="200" viewBox="0 0 200 200"&gt;
+  &amp;lt;circle cx="100" cy="100" r="80" fill="blue" /&gt;
+  &amp;lt;rect x="50" y="50" width="100" height="100" fill="red" /&gt;
+&amp;lt;/svg&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;svg width="200" height="200" viewBox="0 0 200 200" style="border: 1px solid #ddd; background-color: #f9f9f9;"&gt;
+                        &lt;circle cx="100" cy="100" r="80" fill="#667eea" /&gt;
+                        &lt;rect x="50" y="50" width="100" height="100" fill="#764ba2" opacity="0.5" /&gt;
+                    &lt;/svg&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&lt;strong&gt;HTML Review Website&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;A learning resource for HTML fundamentals&lt;/p&gt;
+        &lt;p&gt;&lt;small&gt;&amp;copy; 2024 Web Development Lab&lt;/small&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;

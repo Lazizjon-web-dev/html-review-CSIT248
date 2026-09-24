@@ -1,0 +1,273 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Review - Tables&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;HTML Review Website&lt;/h1&gt;
+        &lt;p&gt;A comprehensive guide to HTML tags, their attributes, and usage examples&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="text.html"&gt;Text Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="links.html"&gt;Links & Media&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="lists.html"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="tables.html" class="active"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="forms.html"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="media.html"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="semantic.html"&gt;Semantic Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="metadata.html"&gt;Metadata&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;div class="tag-section"&gt;
+            &lt;h2&gt;Table Tags&lt;/h2&gt;
+
+            &lt;!-- Table Tag --&gt;
+            &lt;h3&gt;&amp;lt;table&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; tag is used to create a table that displays data in rows and columns. 
+                Tables are useful for organizing and presenting structured data in a grid format.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;border&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the width of the table border in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;cellpadding&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the space between cell borders and content (deprecated)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;cellspacing&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the space between cells (deprecated)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;table border="1"&gt;
+  &amp;lt;tr&gt;
+    &amp;lt;th&gt;Name&amp;lt;/th&gt;
+    &amp;lt;th&gt;Age&amp;lt;/th&gt;
+  &amp;lt;/tr&gt;
+  &amp;lt;tr&gt;
+    &amp;lt;td&gt;John&amp;lt;/td&gt;
+    &amp;lt;td&gt;25&amp;lt;/td&gt;
+  &amp;lt;/tr&gt;
+&amp;lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;table border="1" style="border-collapse: collapse;"&gt;
+                        &lt;tr&gt;
+                            &lt;th style="padding: 8px; text-align: left;"&gt;Name&lt;/th&gt;
+                            &lt;th style="padding: 8px; text-align: left;"&gt;Age&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style="padding: 8px; border: 1px solid #ddd;"&gt;John&lt;/td&gt;
+                            &lt;td style="padding: 8px; border: 1px solid #ddd;"&gt;25&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Table Row Tag --&gt;
+            &lt;h3&gt;&amp;lt;tr&amp;gt; Tag (Table Row)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; tag defines a row in a table. Each &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; contains 
+                one or more &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; (table data) or &lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; (table header) elements.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;!-- Table Header Tag --&gt;
+            &lt;h3&gt;&amp;lt;th&amp;gt; Tag (Table Header)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; tag defines a header cell in a table. Header cells typically display 
+                bold and centered text to distinguish them from regular data cells.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;colspan&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies how many columns the cell spans&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;rowspan&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies how many rows the cell spans&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;scope&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the scope of the header (row or col)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;!-- Table Data Tag --&gt;
+            &lt;h3&gt;&amp;lt;td&amp;gt; Tag (Table Data)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; tag defines a standard data cell in a table. It is used to display 
+                regular cell content such as text, numbers, or other HTML elements.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;colspan&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies how many columns the cell spans&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;rowspan&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies how many rows the cell spans&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;table border="1"&gt;
+  &amp;lt;tr&gt;
+    &amp;lt;th colspan="2"&gt;Header spans 2 columns&amp;lt;/th&gt;
+  &amp;lt;/tr&gt;
+  &amp;lt;tr&gt;
+    &amp;lt;td&gt;Cell 1&amp;lt;/td&gt;
+    &amp;lt;td&gt;Cell 2&amp;lt;/td&gt;
+  &amp;lt;/tr&gt;
+&amp;lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;table border="1" style="border-collapse: collapse;"&gt;
+                        &lt;tr&gt;
+                            &lt;th colspan="2" style="padding: 8px; text-align: left;"&gt;Header spans 2 columns&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style="padding: 8px; border: 1px solid #ddd;"&gt;Cell 1&lt;/td&gt;
+                            &lt;td style="padding: 8px; border: 1px solid #ddd;"&gt;Cell 2&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Table Head, Body, Footer Tags --&gt;
+            &lt;h3&gt;&amp;lt;thead&amp;gt;, &amp;lt;tbody&amp;gt;, and &amp;lt;tfoot&amp;gt; Tags&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; tag groups header content, the &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; tag groups body content, 
+                and the &lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;/code&gt; tag groups footer content in a table. These semantic tags help organize 
+                table structure and improve accessibility.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;These tags have no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;table border="1"&gt;
+  &amp;lt;thead&gt;
+    &amp;lt;tr&gt;&amp;lt;th&gt;Name&amp;lt;/th&gt;&amp;lt;th&gt;Score&amp;lt;/th&gt;&amp;lt;/tr&gt;
+  &amp;lt;/thead&gt;
+  &amp;lt;tbody&gt;
+    &amp;lt;tr&gt;&amp;lt;td&gt;Alice&amp;lt;/td&gt;&amp;lt;td&gt;95&amp;lt;/td&gt;&amp;lt;/tr&gt;
+  &amp;lt;/tbody&gt;
+  &amp;lt;tfoot&gt;
+    &amp;lt;tr&gt;&amp;lt;th&gt;Total&amp;lt;/th&gt;&amp;lt;td&gt;95&amp;lt;/td&gt;&amp;lt;/tr&gt;
+  &amp;lt;/tfoot&gt;
+&amp;lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;table border="1" style="border-collapse: collapse;"&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th style="padding: 8px; text-align: left;"&gt;Name&lt;/th&gt;
+                                &lt;th style="padding: 8px; text-align: left;"&gt;Score&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td style="padding: 8px; border: 1px solid #ddd;"&gt;Alice&lt;/td&gt;
+                                &lt;td style="padding: 8px; border: 1px solid #ddd;"&gt;95&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;tfoot&gt;
+                            &lt;tr&gt;
+                                &lt;th style="padding: 8px; text-align: left;"&gt;Total&lt;/th&gt;
+                                &lt;td style="padding: 8px; border: 1px solid #ddd;"&gt;95&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tfoot&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&lt;strong&gt;HTML Review Website&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;A learning resource for HTML fundamentals&lt;/p&gt;
+        &lt;p&gt;&lt;small&gt;&amp;copy; 2024 Web Development Lab&lt;/small&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;

@@ -1,0 +1,311 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Review - Forms&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;HTML Review Website&lt;/h1&gt;
+        &lt;p&gt;A comprehensive guide to HTML tags, their attributes, and usage examples&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="text.html"&gt;Text Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="links.html"&gt;Links & Media&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="lists.html"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="forms.html" class="active"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="media.html"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="semantic.html"&gt;Semantic Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="metadata.html"&gt;Metadata&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;div class="tag-section"&gt;
+            &lt;h2&gt;Form Tags&lt;/h2&gt;
+
+            &lt;!-- Form Tag --&gt;
+            &lt;h3&gt;&amp;lt;form&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag creates a form for user input. Forms contain form elements like input fields, 
+                text areas, buttons, and checkboxes that allow users to submit data.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;action&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies where to send the form data when submitted&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;method&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the HTTP method (GET or POST)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;enctype&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies how form data should be encoded&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;form action="/submit" method="POST"&gt;
+  &amp;lt;label for="name"&gt;Name:&amp;lt;/label&gt;
+  &amp;lt;input type="text" id="name" name="name"&gt;
+  &amp;lt;button type="submit"&gt;Submit&amp;lt;/button&gt;
+&amp;lt;/form&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;form style="display: flex; flex-direction: column; gap: 10px;"&gt;
+                        &lt;div&gt;
+                            &lt;label for="name1"&gt;Name:&lt;/label&gt;
+                            &lt;input type="text" id="name1" name="name" style="margin-left: 10px;"&gt;
+                        &lt;/div&gt;
+                        &lt;button type="submit" style="width: fit-content; padding: 8px 16px; background-color: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer;"&gt;Submit&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Input Tag --&gt;
+            &lt;h3&gt;&amp;lt;input&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; tag is used to create interactive form controls. It is a self-closing tag 
+                that supports various types like text, email, password, number, checkbox, and radio buttons.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the type of input (text, email, password, number, etc.)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the name of the input (used for form submission)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;placeholder&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Shows hint text when the field is empty&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;required&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Makes the field mandatory&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;input type="email" name="email" placeholder="Enter your email" required&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;input type="email" name="email" placeholder="Enter your email" required style="padding: 8px; font-size: 1rem;"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Label Tag --&gt;
+            &lt;h3&gt;&amp;lt;label&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt; tag provides a label for form inputs. It improves usability by making 
+                form fields more accessible and clickable, especially for checkboxes and radio buttons.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;for&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the ID of the form element that the label belongs to&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;label for="email"&gt;Email:&amp;lt;/label&gt;
+&amp;lt;input type="email" id="email" name="email"&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;label for="email2" style="margin-right: 10px;"&gt;Email:&lt;/label&gt;
+                    &lt;input type="email" id="email2" name="email" style="padding: 8px; font-size: 1rem;"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Textarea Tag --&gt;
+            &lt;h3&gt;&amp;lt;textarea&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt; tag creates a multi-line text input field. It allows users to enter 
+                longer amounts of text such as comments, messages, or descriptions.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;rows&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the number of visible text lines&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;cols&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the visible width in characters&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;placeholder&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Shows hint text when the field is empty&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;textarea rows="4" cols="50" placeholder="Enter your message"&gt;&amp;lt;/textarea&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;textarea rows="4" cols="50" placeholder="Enter your message" style="padding: 8px; font-size: 1rem; font-family: 'Courier New', monospace;"&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Button Tag --&gt;
+            &lt;h3&gt;&amp;lt;button&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt; tag creates a clickable button that can perform various actions 
+                such as submitting forms or triggering JavaScript functions.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the button type (submit, reset, button)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the name of the button&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;value&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the value sent when the button is clicked&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;button type="submit"&gt;Submit&amp;lt;/button&gt;
+&amp;lt;button type="reset"&gt;Reset&amp;lt;/button&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;button type="submit" style="padding: 8px 16px; margin-right: 10px; background-color: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer;"&gt;Submit&lt;/button&gt;
+                    &lt;button type="reset" style="padding: 8px 16px; background-color: #999; color: white; border: none; border-radius: 5px; cursor: pointer;"&gt;Reset&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Select and Option Tags --&gt;
+            &lt;h3&gt;&amp;lt;select&amp;gt; and &amp;lt;option&amp;gt; Tags&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; tag creates a dropdown list, and the &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; tag 
+                defines the selectable options within that list.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the name of the select list&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;multiple&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Allows multiple selections&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;selected&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;(option) Pre-selects an option&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;select name="country"&gt;
+  &amp;lt;option value="usa"&gt;USA&amp;lt;/option&gt;
+  &amp;lt;option value="canada"&gt;Canada&amp;lt;/option&gt;
+  &amp;lt;option value="mexico" selected&gt;Mexico&amp;lt;/option&gt;
+&amp;lt;/select&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;select name="country" style="padding: 8px; font-size: 1rem;"&gt;
+                        &lt;option value="usa"&gt;USA&lt;/option&gt;
+                        &lt;option value="canada"&gt;Canada&lt;/option&gt;
+                        &lt;option value="mexico" selected&gt;Mexico&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&lt;strong&gt;HTML Review Website&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;A learning resource for HTML fundamentals&lt;/p&gt;
+        &lt;p&gt;&lt;small&gt;&amp;copy; 2024 Web Development Lab&lt;/small&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;

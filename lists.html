@@ -1,0 +1,259 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Review - Lists&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;HTML Review Website&lt;/h1&gt;
+        &lt;p&gt;A comprehensive guide to HTML tags, their attributes, and usage examples&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="text.html"&gt;Text Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="links.html"&gt;Links & Media&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="lists.html" class="active"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="forms.html"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="media.html"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="semantic.html"&gt;Semantic Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="metadata.html"&gt;Metadata&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;div class="tag-section"&gt;
+            &lt;h2&gt;List Tags&lt;/h2&gt;
+
+            &lt;!-- Unordered List Tag --&gt;
+            &lt;h3&gt;&amp;lt;ul&amp;gt; Tag (Unordered List)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; tag creates an unordered (bulleted) list. List items inside an unordered list 
+                are displayed with bullet points by default.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the bullet point style (disc, circle, square)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;ul&gt;
+  &amp;lt;li&gt;Apple&amp;lt;/li&gt;
+  &amp;lt;li&gt;Banana&amp;lt;/li&gt;
+  &amp;lt;li&gt;Orange&amp;lt;/li&gt;
+&amp;lt;/ul&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Apple&lt;/li&gt;
+                        &lt;li&gt;Banana&lt;/li&gt;
+                        &lt;li&gt;Orange&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Ordered List Tag --&gt;
+            &lt;h3&gt;&amp;lt;ol&amp;gt; Tag (Ordered List)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; tag creates an ordered (numbered) list. List items in an ordered list 
+                are displayed with numbers or letters depending on the type attribute.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies numbering style (1, a, A, i, I)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the starting number of the list&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;reversed&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Reverses the order of list items (descending)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;ol&gt;
+  &amp;lt;li&gt;First step&amp;lt;/li&gt;
+  &amp;lt;li&gt;Second step&amp;lt;/li&gt;
+  &amp;lt;li&gt;Third step&amp;lt;/li&gt;
+&amp;lt;/ol&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;First step&lt;/li&gt;
+                        &lt;li&gt;Second step&lt;/li&gt;
+                        &lt;li&gt;Third step&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- List Item Tag --&gt;
+            &lt;h3&gt;&amp;lt;li&amp;gt; Tag (List Item)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tag defines a single item within a list. It can only be used inside 
+                &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt;, or &lt;code&gt;&amp;lt;menu&amp;gt;&lt;/code&gt; elements.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;value&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the numeric value for an item in an ordered list&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;ol&gt;
+  &amp;lt;li value="10"&gt;Item ten&amp;lt;/li&gt;
+  &amp;lt;li&gt;Item eleven&amp;lt;/li&gt;
+  &amp;lt;li&gt;Item twelve&amp;lt;/li&gt;
+&amp;lt;/ol&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;ol&gt;
+                        &lt;li value="10"&gt;Item ten&lt;/li&gt;
+                        &lt;li&gt;Item eleven&lt;/li&gt;
+                        &lt;li&gt;Item twelve&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Definition List Tag --&gt;
+            &lt;h3&gt;&amp;lt;dl&amp;gt; Tag (Definition List)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;dl&amp;gt;&lt;/code&gt; tag creates a definition list, which consists of terms and their definitions. 
+                It is useful for glossaries, dictionaries, and term-definition pairs.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;dl&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;dl&gt;
+  &amp;lt;dt&gt;HTML&amp;lt;/dt&gt;
+  &amp;lt;dd&gt;HyperText Markup Language&amp;lt;/dd&gt;
+  &amp;lt;dt&gt;CSS&amp;lt;/dt&gt;
+  &amp;lt;dd&gt;Cascading Style Sheets&amp;lt;/dd&gt;
+&amp;lt;/dl&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;dl&gt;
+                        &lt;dt&gt;HTML&lt;/dt&gt;
+                        &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+                        &lt;dt&gt;CSS&lt;/dt&gt;
+                        &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+                    &lt;/dl&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Definition Term Tag --&gt;
+            &lt;h3&gt;&amp;lt;dt&amp;gt; and &amp;lt;dd&amp;gt; Tags&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;dt&amp;gt;&lt;/code&gt; tag defines a term in a definition list, and the &lt;code&gt;&amp;lt;dd&amp;gt;&lt;/code&gt; 
+                tag provides the definition for that term. These tags must be used inside a &lt;code&gt;&amp;lt;dl&amp;gt;&lt;/code&gt; element.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;Both tags have no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;dl&gt;
+  &amp;lt;dt&gt;Web Browser&amp;lt;/dt&gt;
+  &amp;lt;dd&gt;Software that displays web pages&amp;lt;/dd&gt;
+&amp;lt;/dl&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;dl&gt;
+                        &lt;dt&gt;Web Browser&lt;/dt&gt;
+                        &lt;dd&gt;Software that displays web pages&lt;/dd&gt;
+                    &lt;/dl&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&lt;strong&gt;HTML Review Website&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;A learning resource for HTML fundamentals&lt;/p&gt;
+        &lt;p&gt;&lt;small&gt;&amp;copy; 2024 Web Development Lab&lt;/small&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;

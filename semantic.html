@@ -1,0 +1,299 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Review - Semantic and Layout Tags&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;HTML Review Website&lt;/h1&gt;
+        &lt;p&gt;A comprehensive guide to HTML tags, their attributes, and usage examples&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="text.html"&gt;Text Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="links.html"&gt;Links & Media&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="lists.html"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="forms.html"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="media.html"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="semantic.html" class="active"&gt;Semantic Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="metadata.html"&gt;Metadata&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;div class="tag-section"&gt;
+            &lt;h2&gt;Semantic and Layout Tags&lt;/h2&gt;
+
+            &lt;!-- Section Tag --&gt;
+            &lt;h3&gt;&amp;lt;section&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; tag defines a thematic grouping of content. It is used to organize 
+                related content into logical sections with their own headings and content.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;section&gt;
+  &amp;lt;h2&gt;About Us&amp;lt;/h2&gt;
+  &amp;lt;p&gt;We are a web development company...&amp;lt;/p&gt;
+&amp;lt;/section&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;section style="border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background-color: #f9f9f9;"&gt;
+                        &lt;h3 style="color: #667eea;"&gt;About Us&lt;/h3&gt;
+                        &lt;p&gt;We are a web development company focused on creating modern and responsive websites.&lt;/p&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Article Tag --&gt;
+            &lt;h3&gt;&amp;lt;article&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; tag represents independent, self-contained content such as blog posts, 
+                news articles, or forum posts that could be distributed independently.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;article&gt;
+  &amp;lt;h2&gt;Getting Started with HTML&amp;lt;/h2&gt;
+  &amp;lt;p&gt;HTML is the foundation of web development...&amp;lt;/p&gt;
+&amp;lt;/article&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;article style="border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background-color: #f9f9f9;"&gt;
+                        &lt;h3 style="color: #667eea;"&gt;Getting Started with HTML&lt;/h3&gt;
+                        &lt;p&gt;HTML is the foundation of web development that structures content in web browsers.&lt;/p&gt;
+                    &lt;/article&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Aside Tag --&gt;
+            &lt;h3&gt;&amp;lt;aside&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt; tag defines content that is tangentially related to the main content, 
+                such as sidebars, pull quotes, or advertisements.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;aside&gt;
+  &amp;lt;h3&gt;Related Links&amp;lt;/h3&gt;
+  &amp;lt;ul&gt;
+    &amp;lt;li&gt;&amp;lt;a href="#"&gt;More Articles&amp;lt;/a&gt;&amp;lt;/li&gt;
+  &amp;lt;/ul&gt;
+&amp;lt;/aside&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;aside style="border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background-color: #f0f0f0; float: right; width: 40%; margin-left: 1rem;"&gt;
+                        &lt;h4 style="color: #667eea;"&gt;Related Links&lt;/h4&gt;
+                        &lt;ul style="margin-left: 1.5rem;"&gt;
+                            &lt;li&gt;&lt;a href="#" style="color: #667eea;"&gt;More Articles&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/aside&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Nav Tag --&gt;
+            &lt;h3&gt;&amp;lt;nav&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt; tag defines a navigation section containing links to other pages or sections. 
+                It is typically used for menus and navigation bars.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;!-- Header Tag --&gt;
+            &lt;h3&gt;&amp;lt;header&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; tag defines a header for a page or section, typically containing 
+                the site title, logo, search bar, and navigation elements.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;!-- Footer Tag --&gt;
+            &lt;h3&gt;&amp;lt;footer&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt; tag defines a footer for a page or section, typically containing 
+                copyright information, contact details, and links.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;!-- Main Tag --&gt;
+            &lt;h3&gt;&amp;lt;main&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt; tag specifies the main content of a page. There should be only one 
+                &lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt; element per page, and it should not contain header, footer, or nav elements.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;!-- Div and Span Tags --&gt;
+            &lt;h3&gt;&amp;lt;div&amp;gt; and &amp;lt;span&amp;gt; Tags&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; tag is a block-level container for grouping and styling content, 
+                while the &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; tag is an inline container for text and elements.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;class&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies CSS class for styling&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;id&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies a unique identifier&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;div class="container"&gt;
+  &amp;lt;p&gt;This is a &amp;lt;span class="highlight"&gt;highlighted&amp;lt;/span&gt; text.&amp;lt;/p&gt;
+&amp;lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;div style="border: 1px solid #ddd; padding: 1rem; border-radius: 5px; background-color: #f9f9f9;"&gt;
+                        &lt;p&gt;This is a &lt;span style="background-color: yellow; padding: 2px 4px;"&gt;highlighted&lt;/span&gt; text.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&lt;strong&gt;HTML Review Website&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;A learning resource for HTML fundamentals&lt;/p&gt;
+        &lt;p&gt;&lt;small&gt;&amp;copy; 2024 Web Development Lab&lt;/small&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;

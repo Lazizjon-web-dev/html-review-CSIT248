@@ -1,0 +1,334 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Review - Metadata&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;HTML Review Website&lt;/h1&gt;
+        &lt;p&gt;A comprehensive guide to HTML tags, their attributes, and usage examples&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="text.html"&gt;Text Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="links.html"&gt;Links & Media&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="lists.html"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="forms.html"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="media.html"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="semantic.html"&gt;Semantic Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="metadata.html" class="active"&gt;Metadata&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;div class="tag-section"&gt;
+            &lt;h2&gt;Metadata Tags&lt;/h2&gt;
+            
+            &lt;div class="definition"&gt;
+                Metadata tags are used in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of an HTML document to provide 
+                information about the page that is not displayed in the browser but is important for browsers, search engines, and other services.
+            &lt;/div&gt;
+
+            &lt;!-- Meta Tag --&gt;
+            &lt;h3&gt;&amp;lt;meta&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt; tag defines metadata about an HTML document. Metadata is information 
+                about data that is used by the browser, search engines, and other web services. It is a self-closing tag.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;charset&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the character encoding (e.g., UTF-8)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the name of the metadata&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;content&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the value of the metadata&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;http-equiv&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Provides an HTTP header for the information&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;meta charset="UTF-8"&gt;
+&amp;lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&amp;lt;meta name="description" content="Page description"&gt;
+&amp;lt;meta name="keywords" content="html, css, web"&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;Meta tags are not visible on the page but are used by browsers and search engines.&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Title Tag --&gt;
+            &lt;h3&gt;&amp;lt;title&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag defines the title of the HTML document. The title appears in the 
+                browser tab and is important for SEO (Search Engine Optimization) and user experience.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;td&gt;The &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag has no specific attributes beyond global attributes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;title&gt;My Awesome Website - Home Page&amp;lt;/title&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;The title appears in the browser tab at the top of the window.&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Link Tag --&gt;
+            &lt;h3&gt;&amp;lt;link&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tag defines the relationship between the current HTML document and 
+                external resources such as stylesheets, favicons, and other linked files. It is a self-closing tag.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;rel&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the relationship (e.g., stylesheet, icon)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;href&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of the linked resource&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the MIME type of the resource&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;link rel="stylesheet" href="style.css"&gt;
+&amp;lt;link rel="icon" href="favicon.ico"&gt;
+&amp;lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;Link tags connect external resources but don't display visible content.&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Style Tag --&gt;
+            &lt;h3&gt;&amp;lt;style&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag is used to embed CSS styles directly into an HTML document. 
+                While external stylesheets are preferred, this tag can be useful for page-specific styles.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the MIME type (usually text/css)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;media&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies when the style applies (e.g., screen, print)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;style type="text/css"&gt;
+  h1 {
+    color: blue;
+    font-size: 2em;
+  }
+&amp;lt;/style&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;Styles defined in the style tag affect the appearance of HTML elements.&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Script Tag --&gt;
+            &lt;h3&gt;&amp;lt;script&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag is used to embed JavaScript code or link to external JavaScript files. 
+                JavaScript provides interactivity and dynamic behavior to web pages.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;src&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of an external JavaScript file&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the MIME type (usually text/javascript)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;async&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Script executes asynchronously while page loads&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;defer&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Script executes after page finishes loading&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;script src="script.js"&gt;&amp;lt;/script&gt;
+
+&amp;lt;script type="text/javascript"&gt;
+  console.log('Hello, World!');
+  alert('JavaScript is running!');
+&amp;lt;/script&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;Scripts can provide dynamic functionality and interactivity to the page.&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Base Tag --&gt;
+            &lt;h3&gt;&amp;lt;base&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt; tag specifies the base URL and target for all relative URLs in the document. 
+                It must be placed in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section. It is a self-closing tag.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;href&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the base URL for relative URLs&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;target&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies default target for links (_self, _blank, _parent, _top)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;base href="https://example.com/" target="_blank"&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;Base tag sets the foundation URL for all relative links on the page.&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Complete Head Example --&gt;
+            &lt;h3&gt;Complete Example: Full HTML &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; Section&lt;/h3&gt;
+            
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&gt;
+&amp;lt;html lang="en"&gt;
+&amp;lt;head&gt;
+  &amp;lt;meta charset="UTF-8"&gt;
+  &amp;lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &amp;lt;meta name="description" content="Page description for search engines"&gt;
+  &amp;lt;meta name="keywords" content="html, css, javascript"&gt;
+  &amp;lt;title&gt;My Website - Home Page&amp;lt;/title&gt;
+  &amp;lt;link rel="stylesheet" href="style.css"&gt;
+  &amp;lt;link rel="icon" href="favicon.ico"&gt;
+  &amp;lt;base href="https://example.com/"&gt;
+&amp;lt;/head&gt;
+&amp;lt;body&gt;
+  &amp;lt;!-- Page content here --&gt;
+&amp;lt;/body&gt;
+&amp;lt;/html&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;The head section contains all metadata and doesn't display on the page but is essential for proper document structure and SEO.&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&lt;strong&gt;HTML Review Website&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;A learning resource for HTML fundamentals&lt;/p&gt;
+        &lt;p&gt;&lt;small&gt;&amp;copy; 2024 Web Development Lab&lt;/small&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;

@@ -1,0 +1,268 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Review - Links and Media&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;HTML Review Website&lt;/h1&gt;
+        &lt;p&gt;A comprehensive guide to HTML tags, their attributes, and usage examples&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="text.html"&gt;Text Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="links.html" class="active"&gt;Links & Media&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="lists.html"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="forms.html"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="media.html"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="semantic.html"&gt;Semantic Tags&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="metadata.html"&gt;Metadata&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;div class="tag-section"&gt;
+            &lt;h2&gt;Links, Images, Video, and Audio Tags&lt;/h2&gt;
+
+            &lt;!-- Anchor Tag --&gt;
+            &lt;h3&gt;&amp;lt;a&amp;gt; Tag (Anchor/Link)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag creates a hyperlink to other web pages, files, or resources. 
+                It is one of the most fundamental tags in HTML and enables navigation across the web.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;href&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of the page the link goes to&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;target&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies where to open the link (e.g., _blank for new window)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies extra information about the link (shown on hover)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;a href="https://example.com" target="_blank"&gt;Visit Example&amp;lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Image Tag --&gt;
+            &lt;h3&gt;&amp;lt;img&amp;gt; Tag (Image)&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag embeds an image in the HTML document. It is a self-closing tag 
+                that requires a source (src) attribute to specify the image file.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;src&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL or path to the image file (required)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;alt&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Provides alternative text if the image cannot be loaded&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;width&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the width of the image in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;height&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the height of the image in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;img src="image.jpg" alt="Description of image" width="300" height="200"&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;(Image would appear here if the file existed)&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Audio Tag --&gt;
+            &lt;h3&gt;&amp;lt;audio&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; tag is used to embed audio files in web pages. It supports multiple audio formats 
+                and provides built-in playback controls like play, pause, and volume adjustment.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;src&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of the audio file&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;controls&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Shows play, pause, and volume controls&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;autoplay&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Audio starts playing automatically when the page loads&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;loop&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Audio restarts from the beginning after reaching the end&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;audio controls&gt;
+  &amp;lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support audio.
+&amp;lt;/audio&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;(Audio player would appear here if the file existed)&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Video Tag --&gt;
+            &lt;h3&gt;&amp;lt;video&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; tag is used to embed video files in web pages. It supports multiple video formats 
+                and provides playback controls similar to the audio tag.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;src&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of the video file&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;width&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the width of the video player in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;height&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the height of the video player in pixels&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;controls&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Shows play, pause, and volume controls&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;video width="400" height="300" controls&gt;
+  &amp;lt;source src="video.mp4" type="video/mp4"&gt;
+  Your browser does not support video.
+&amp;lt;/video&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;(Video player would appear here if the file existed)&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Source Tag --&gt;
+            &lt;h3&gt;&amp;lt;source&amp;gt; Tag&lt;/h3&gt;
+            
+            &lt;div class="definition"&gt;
+                The &lt;code&gt;&amp;lt;source&amp;gt;&lt;/code&gt; tag specifies multiple media resources for &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; 
+                or &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; elements. This allows the browser to choose a compatible format.
+            &lt;/div&gt;
+
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Attribute&lt;/th&gt;
+                        &lt;th&gt;Role&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;src&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the URL of the media file (required)&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+                        &lt;td&gt;Specifies the MIME type of the media file&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+
+            &lt;div class="example-container"&gt;
+                &lt;div class="example-code"&gt;
+                    &lt;pre&gt;&lt;code&gt;&amp;lt;video controls&gt;
+  &amp;lt;source src="video.mp4" type="video/mp4"&gt;
+  &amp;lt;source src="video.webm" type="video/webm"&gt;
+&amp;lt;/video&gt;&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="example-result"&gt;
+                    &lt;h4&gt;Rendered Result:&lt;/h4&gt;
+                    &lt;p&gt;&lt;em&gt;(Video player would appear here if the file existed)&lt;/em&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&lt;strong&gt;HTML Review Website&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;A learning resource for HTML fundamentals&lt;/p&gt;
+        &lt;p&gt;&lt;small&gt;&amp;copy; 2024 Web Development Lab&lt;/small&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
